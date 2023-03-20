@@ -1,0 +1,94 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+---
+
+
+<Layout>
+<main>
+    <div class="">
+        <div>
+            <section>
+                <h2 class="header flex justify-center text-center text-4xl">Invmarkstores: Trusted Market places for high-end goods
+                </h2>
+                <div class="image flex justify-center mx-auto mt-8">
+                    <img class="green-img" src="./Green.png" alt="" srcset="">
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+</main>
+</Layout>
+
+
+<style>
+
+
+   .green-img{
+    width: 250px;
+   }
+   .header{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.4px;
+   }
+    b{
+        color: rgb(141, 141, 143);
+    }
+
+    .framer--text{
+        color: rgb(245, 130, 162);;
+    }
+    
+
+    .framer--text-1{
+        color: rgb(131, 221, 231);;
+    }
+    .text--header{
+        color:rgba(32, 32, 32, 0.8);
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 2em;
+        grid-row-gap: 30px;  
+    }
+
+    .bag--img{
+        border-radius: 20px;
+    } 
+
+    .desc--1{
+        background-color: #d1d5fa;
+    }
+
+    .col-1{
+        background-color: #fab7c7;;
+        border-radius: 4px;
+    }
+
+    .col-2{
+        background-color: #c6f3f8;
+        border-radius: 4px;
+    }
+
+    @media screen and (max-width: 760px){
+        .grids{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 2em;
+        grid-row-gap: 30px;
+        width: 100%;
+        margin: auto;
+        margin-top: 5em;    
+    }
+
+    .col-2{
+        grid-row: 2;
+    }
+    
+}
+</style>
