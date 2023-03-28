@@ -9,12 +9,14 @@ import Layout from "../layouts/Layout.astro";
     <div class="">
         <div>
             <section>
-                <h2 class="header flex justify-center text-center text-4xl">Invmarkstores: Trusted Market places for high-end goods
+                <h2 class="header flex flex-col justify-start text-6xl ">
+                  <span class="text-1">Less overpaying.</span>
+                  <span class="text-2">Shop Less.</span>  
+                  <span class="text-2xl mt-4 w-96">
+                    Shop from your favourite brands here with us,
+                    amazing amazon products, redbubble apparels etc.
+                  </span>
                 </h2>
-                <div class="image flex justify-center mx-auto mt-8">
-                    <img class="green-img" src="./Green.png" alt="" srcset="">
-                </div>
-
             </section>
 
         </div>
@@ -25,12 +27,20 @@ import Layout from "../layouts/Layout.astro";
 
 <style>
 
-
+   .text-1, .text-2{
+    font-weight: 900;
+   }
+    .text-1{
+        color: #004449;
+    }
+    .text-2{
+        color: #ffac7f;
+    }
    .green-img{
     width: 250px;
    }
    .header{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Gothic A1', sans-serif;
     letter-spacing: 1.4px;
    }
     b{
