@@ -4,10 +4,8 @@ import '../styles/card.css'
 import Card from "./Card";
 ---
 
-
-
 <Layout>
-    <div class="mt-12 w-full">
+    <div class="main mt-12 w-full">
        <section class="flex flex-col justify-center text-center mx-auto ">
         <h2 class="text-4xl mb-8 underline">What we offer?</h2>
         <span class=" desc-1 flex justify-center mx-auto text-center w-1/2">
@@ -16,15 +14,21 @@ import Card from "./Card";
     </section>
     <div class="flex flex-row justify-center gap-6 mx-auto">
         <Card title="Shop from Amazon" imgUrl="./amazon.png" desc="Shop your favourite amazon products, get quailty products reviewed for you so you don't have to. " />
-        <Card title="Shop from redbubble" imgUrl="./redbbubble.webp" />
+        <Card title="Shop from redbubble" imgUrl="./redbubble.png" desc="Over 700000 creatives worldwide making things like shirts, stickers, phone cases, and pillows weirdly meaningful." />
         <Card title="Shop from Eufy" imgUrl="./eufy.png" desc="eufy has developed a new generation of easy-to-use smart home devices that are designed to enhance your life at home." />
-        <Card title="Shop from anker" imgUrl="./anker.webp" desc="Anker is the global leader in charging technology. This includes wireless charging, car charging, and our best-selling portable and wall chargers"/>
+            <Card  title="Shop from anker" imgUrl="./anker.png" desc="Anker is the global leader in charging technology. This includes wireless charging, car charging, and our best-selling portable and wall chargers"/>
+       
     </div>
    
     </div>    
 </Layout>
 
 <style>
+    .main{
+        /* height: ;
+        background-color: #004449; */
+    }
+
     h1, h2{
         font-family: 'Playfair Display', serif;
     }
