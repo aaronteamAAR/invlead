@@ -11,7 +11,7 @@ import Layout from "../layouts/Layout.astro";
             <section>
                 <h2 class="header flex flex-col justify-start text-6xl ">
                   <span class="text-1">Less overpaying.</span>
-                  <span class="text-2">Shop Less.</span>  
+                  <span class="text-2">Shop more.</span>  
                   <span class="text-2xl mt-4 w-96">
                     Shop from your favourite brands here with us,
                     amazing amazon products, redbubble apparels etc.
@@ -27,8 +27,13 @@ import Layout from "../layouts/Layout.astro";
 
 <style>
 
+    h1,h2{
+        font-family: 'Playfair Display', serif;
+    }
+
    .text-1, .text-2{
     font-weight: 900;
+    font-family: 'Playfair Display', serif;
    }
     .text-1{
         color: #004449;
@@ -36,69 +41,5 @@ import Layout from "../layouts/Layout.astro";
     .text-2{
         color: #ffac7f;
     }
-   .green-img{
-    width: 250px;
-   }
-   .header{
-    font-family: 'Gothic A1', sans-serif;
-    letter-spacing: 1.4px;
-   }
-    b{
-        color: rgb(141, 141, 143);
-    }
 
-    .framer--text{
-        color: rgb(245, 130, 162);;
-    }
-    
-
-    .framer--text-1{
-        color: rgb(131, 221, 231);;
-    }
-    .text--header{
-        color:rgba(32, 32, 32, 0.8);
-    }
-    .grids{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 2em;
-        grid-row-gap: 30px;  
-    }
-
-    .bag--img{
-        border-radius: 20px;
-    } 
-
-    .desc--1{
-        background-color: #d1d5fa;
-    }
-
-    .col-1{
-        background-color: #fab7c7;;
-        border-radius: 4px;
-    }
-
-    .col-2{
-        background-color: #c6f3f8;
-        border-radius: 4px;
-    }
-
-    @media screen and (max-width: 760px){
-        .grids{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 2em;
-        grid-row-gap: 30px;
-        width: 100%;
-        margin: auto;
-        margin-top: 5em;    
-    }
-
-    .col-2{
-        grid-row: 2;
-    }
-    
-}
 </style>
