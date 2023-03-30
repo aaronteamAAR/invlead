@@ -10,51 +10,46 @@ export default function ProductCard() {
 
 
     useEffect(() => {
-        const fetchDetails = async () => {
-            const {data, error } =  await supabase
+        const fetchDetails = async () => {   
+            let { data: products, error } = await supabase
             .from('products')
             .select()
-
             if(error){
                 setFetchError('COULD NOT FETCH')
                 setDetails(null)
                 console.log(error)
             }
-            if(data){
-                setDetails(data)
+            if(products){
+                setDetails(products)
                 setFetchError(null)
+                console.log(products)
             }
         }
         fetchDetails()
     },[])
     
   return (
-    <div className="basic_block w-[23em] ">
-     
-      <div className="div_content">
-        <ul role="list" className="feat_list">
-          <li>
-            <div className="features_icon"></div>
-          </li>
-          <li className="about_caption">
-            <div className="basic-text">Organization</div>
-          </li>
-          <li className="about_subtitle">
-            <div className="subtitle-small">
-              All slides were named and organized into separate files
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div>
-        hey
+    <>
             {fetchError && (<p>{fetchError}</p>)}
             {details && (<div>
                 {details.map(details => (
-                    <p>{details.title}</p>
+                    <div className="div_content w-[29em]">
+                    <ul role="list" className="feat_list">
+                      <li>
+                        <div className="features_icon"></div>
+                      </li>
+                      <li className="about_caption">
+                        <div className="basic-text">{details.title}</div>
+                      </li>
+                      <li className="about_subtitle">
+                        <div className="subtitle-small">
+                          {details.desc}
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 ))}
             </div>)}
-        </div>
-    </div>
+     </>
   );
 }
