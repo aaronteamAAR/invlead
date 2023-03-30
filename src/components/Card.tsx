@@ -9,7 +9,7 @@ interface Props {
 
 export default function Card(props : Props) {
     return (
-    <main className="flex flex-col justify-center gap-2 mt-12 mx-auto md:flex flex-row">
+    <main className="flex  justify-center gap-2 mt-12 mx-auto md:flex flex-coljustify-center gap-2 mt-12 mx-auto ">
       <div className="w-[20em] rounded overflow-hidden bg-white shadow-sm md: w-[28em]">
          <img className="w-full" src={props.imgUrl} alt={props.alt}  />
             <div className="px-6 py-4">
