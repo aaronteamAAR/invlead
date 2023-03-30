@@ -1,9 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Market from "./MarketPlace.jsx"
+import ProductCard from "./ProductCard";
+
 ---
-
-
 
 
 <Layout>
@@ -11,7 +10,7 @@ import Market from "./MarketPlace.jsx"
       <section>
        <h2 class="flex justify-center mt-12 text-4xl">Available deals</h2>
        <div class="px-12">
-        <Market />
+        <ProductCard client:idle />
        </div>
       </section>
     </main>
@@ -19,7 +18,7 @@ import Market from "./MarketPlace.jsx"
 
 <style>
     h1, h2{
-        font-family: 'Playfair Display', serif;
+        font-family: 'Syne', sans-serif;
     }
 
     .btn-news{
