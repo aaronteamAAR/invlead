@@ -1,7 +1,4 @@
 .basic_block {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     overflow: hidden;
     flex-direction: row;
@@ -9,7 +6,7 @@
     background-color: #fff;
     color: #0d0d0d;
     height: 260px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Gothic A1', sans-serif;
 }
 
 
@@ -22,11 +19,7 @@
     margin: 40px;
     float: none;
     clear: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: row;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -77,6 +70,8 @@
 }
 
 
+
+
 .about_subtitle {
     margin-top: 30px;
 }
@@ -84,5 +79,5 @@
 .subtitle-small {
     font-size: 16px;
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: 500;
 }

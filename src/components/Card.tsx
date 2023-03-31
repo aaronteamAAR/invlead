@@ -1,28 +1,18 @@
+import "../styles/card.css";
+
 interface Props {
-	title?: string;
-    imgUrl?: string;
-    desc?: string;
-    alt?: string;
-    class?: string;
-} 
+  title?: string;
+  imgUrl?: string;
+  desc?: string;
+  alt?: string;
+  class?: string;
+}
 
-
-export default function Card(props : Props) {
-    
-    
-    return (
-    <main className="flex  justify-center gap-2 mt-12 mx-auto md:flex flex-coljustify-center gap-2 mt-12 mx-auto ">
-      <div className="w-[20em] rounded-md overflow-hidden bg-white shadow-sm xl: w-[19em]">
-         <img className="w-full" src={props.imgUrl} alt={props.alt}  />
-            <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">{props.title}</div>
-                 <p className="text-gray-700 text-base">
-                       {props.desc}
-                 </p>
-            </div>
-
-        </div>
- </main>
-        
-    )
+export default function Card(props: Props) {
+  return (
+    <a href="/" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
+    <h5 className="mb-2 text-2xl font-bold tracking-tight text-army ">{props.title}</h5>
+    <p className="font-normal text-army dark:text-gray-400">{props.desc}</p>
+</a>
+  );
 }

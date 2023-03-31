@@ -8,22 +8,19 @@ import ProductCard from "./ProductCard";
 <Layout>
 	<main>
       <section>
-       <h2 class="flex justify-center mt-12 text-4xl">Available deals</h2>
-       <div class="px-12">
-        <ProductCard client:idle />
+       <h2 class="flex justify-center px-[6em] m-12 text-4xl font-serif">Available deals</h2>
+       <div class="flex flex-row justify-center px-12">
+        <ProductCard client:idle/>
        </div>
       </section>
     </main>
 </Layout>
 
 <style>
-    h1, h2{
-        font-family: 'Syne', sans-serif;
-    }
+    
 
     .btn-news{
         background-color: #32594A;
-        letter-spacing: 0.8px;
     }
 </style>
 
