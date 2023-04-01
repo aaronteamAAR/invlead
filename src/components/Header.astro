@@ -6,9 +6,12 @@ import '../styles/header.css'
 
 <Layout>
 <main>
-    <div class='body '>
+    <div class='body mt-12'>
         <div>
-            <section class="px-[6em]">
+            <section data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1300"
+            class="px-[3em] md:px-[6em]">
                 <h2 class="header flex flex-col justify-start ">
                   <span class="text-1 font-serif font-bold">Less overpaying.</span>
                   <span class="text-2 font-serif font-bold">Shop more.</span>  
@@ -40,4 +43,15 @@ import '../styles/header.css'
         color: #ffac7f;
     }
 
+@media screen and (max-width:600px){
+    .text-1, .text-2{
+        width:100%;
+        font-size:62px;
+        line-height: 4.5rem;
+    }
+
+    .text-3{
+     font-size:21px;   
+    }
+}
 </style>

@@ -1,14 +1,20 @@
 
-
-
-
 .body{
     height: 500px;
     background-color: #33594A;
-    background-image: url('./green-bg.jpg') !important;
+    background-image: url('./green-bg.jpg');
     background-repeat: no-repeat;
     background-size: 700px;
     background-position-x: right;
     width: 100% ;
     padding: 0;
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    .body{
+        background-image: url('');
+    }
 }

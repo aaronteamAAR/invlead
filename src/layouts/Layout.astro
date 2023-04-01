@@ -18,13 +18,23 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<slot />
-		
-	</body>
-</html>
-<style is:global>
-	*{
-		/* background-color: #FFF5E1; */
-		font-family: 'Roboto', sans-serif;
+		<style is:global>
 
-	}
-</style>
+			html{
+				scroll-behavior: smooth;
+			}
+			*{
+				/* background-color: #FFF5E1; */
+				font-family: 'Roboto', sans-serif;
+		
+			}
+		</style>
+	</body>
+	<script>
+		import AOS from 'aos'
+		import "aos/dist/aos.css"
+		
+		AOS.init()
+	</script>
+</html>
+

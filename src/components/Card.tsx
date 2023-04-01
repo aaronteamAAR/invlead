@@ -1,4 +1,11 @@
 import "../styles/card.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React from 'react'
+import { useState, useEffect } from "react";
+
+
+
 
 interface Props {
   title?: string;
@@ -9,10 +16,21 @@ interface Props {
 }
 
 export default function Card(props: Props) {
+  useEffect(() => {
+    AOS.init({
+      delay:200,
+      duration:500
+    })
+  })
+
   return (
-    <a href="/" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
-    <h5 className="mb-2 text-2xl font-bold tracking-tight text-army ">{props.title}</h5>
-    <p className="font-normal text-army dark:text-gray-400">{props.desc}</p>
+    <a href="/" 
+    data-aos="fade-up"
+      data-aos-delay="600"
+      data-aos-duration="1300"
+    className="cards block w-[21em] h-1/2 p-6 rounded-lg ">
+    <p className="mb-2 text-2xl text-center font-semibold  text-army ">{props.title}.</p>
+    <p className="font-normal text-army text-center font-normal px-6 py-6">{props.desc}</p>
 </a>
   );
 }

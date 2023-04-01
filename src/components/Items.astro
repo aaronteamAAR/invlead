@@ -5,37 +5,40 @@ import Card from "./Card";
 ---
 
 <Layout>
-  <div class="main mt-12 px-[6em] w-full">
-    <section class="flex flex-col justify-center text-center mx-auto">
-      <h2 class="text-5xl mb-8 font-bold font-serif text-army">How Invmarketstore works</h2>
-      <span class="desc-1 flex justify-center mx-auto text-center w-1/2 font-sans">
+  <div class="main w-full px-[3em] md:px-[6em]">
+    <section 
+    data-aos="fade-up"
+    data-aos-delay="600"
+    data-aos-duration="1300"
+    class="flex flex-col justify-center text-center mx-auto">
+      <h2  class="text-5xl mt-8 mb-8 font-medium font-serif text-army" >How Invmarketstore works</h2>
+      <span class="desc-1 flex justify-center mx-auto text-army text-center w-full font-sans md:w-1/2">
         We provide you with the best products available in the market, from
         amazon products to clothings from your favourite brands, tech products
         all in one spot.
       </span>
     </section>
     <div
-      class="flex flex-row justify-center gap-6 mx-auto xl:flex flex-row px-12"
+    
+      class="flex flex-row flex-wrap  justify-center mt-6 gap-6 mx-auto xl:flex flex-row px-12"
     >
+  
       <Card
-        title="Shop from Amazon"
+        title="Checkout products"
         imgUrl="./amazon.png"
-        desc="Shop your favourite amazon products, get quailty products reviewed for you so you don't have to. "
+        desc="Find unbeatable deals with generous discounts on our marketplace."
       />
       <Card
-        title="Shop from Eufy"
+        title="Pick the product"
         imgUrl="./eufy.png"
-        desc="eufy has developed a new generation of easy-to-use smart home devices that are designed to enhance your life at home."
+        desc="Select your desired product,and receive it directly from our trusted dealers. "
       />
       <Card
-        title="Shop from anker"
+        title="Buy and stay tuned"
         imgUrl="./anker.png"
-        desc="Anker is the global leader in charging technology. This includes wireless charging, car charging, and our best-selling portable and wall chargers"
+        desc="Buy your desired product at an even more affordable price and stay updated on similar deals by following us on social media."
       />
     </div>
-    <section class="flex justify-center text-center mx-auto">
-      <span class="mt-8">And many more...</span>
-    </section>
   </div>
 </Layout>
 

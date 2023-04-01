@@ -1,5 +1,19 @@
-
-.cards{
-    zoom: 0.8;
+.main{
+    height: 700px;
+    background-image: url('./shop-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+.cards{
+    background-color: #FFFEF0;
+}
+
+
+
+@media screen and (max-width: 640px){
+    .main{
+        height: fit-content;
+        padding-bottom:2em ;
+    }
+}
